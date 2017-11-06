@@ -3,7 +3,7 @@
 
 ## Overview
 - `Scriptcalls` contains snippets that can be used in an event scriptcall field.
-- `Lunatic Code` contains snippets for notetag boxes. These can be used with [Yanfly Plugins](https://yanfly.moe/).
+- `Lunatic Code` contains snippets for notetag boxes. These can be used with [Yanfly Plugins](http://yanfly.moe/).
 - `Plugin Snippets` contains snippets that could be used as a part of a plugin.
 
 ## Terms of Use
