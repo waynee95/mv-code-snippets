@@ -1,9 +1,10 @@
-/**
- * This snippet adds DataManager.saveToLastLoadedSlot().
- * You can call that function in an event to save the game to the
- * last loaded slot.
- */
+# Save To Last Loaded Slot
 
+This snippet adds DataManager.saveToLastLoadedSlot().
+You can call that function in an event to save the game to the
+last loaded slot.
+
+```js
 (function() {
   DataManager._lastLoadedSlotID = 1;
   DataManager.loadGameWithoutRescue = function(savefileId) {
@@ -28,3 +29,4 @@
     }
   };
 })();
+```

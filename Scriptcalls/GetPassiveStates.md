@@ -1,10 +1,11 @@
-/**
- * This snippet lists all non hidden passive states from a battler.
- * You can add a <hiddenpassive> notetag to a state to hide it.
- * It will show them in a message box.
- */
+# Get Passive States
 
-var battler = $gameActor.actor(1);
+This snippet lists all non hidden passive states from a battler.
+You can add a <hiddenpassive> notetag to a state to hide it.
+It will show them in a message box.
+
+```js
+var battler = $gameActors.actor(1);
 
 var passives = battler.passiveStates().filter(function(state) {
   return !state.meta.hiddenpassive;
@@ -21,3 +22,4 @@ if (passives.length > 0) {
 }
 
 $gameMessage.add(text);
+```

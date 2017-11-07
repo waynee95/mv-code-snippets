@@ -1,8 +1,9 @@
-/**
- * This snippet lists all resist states from a battler.
- * It will show them in a message box.
- */
+# Get Resist States
 
+This snippet lists all resist states from a battler.
+It will show them in a message box.
+
+```js
 var battler = $gameActors.actor(1);
 
 var stateResist = battler.stateResistSet().map(function(stateId) {
@@ -17,3 +18,4 @@ stateResist.forEach(function(state, index) {
 });
 
 $gameMessage.add(text);
+```

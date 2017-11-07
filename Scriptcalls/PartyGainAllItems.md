@@ -1,8 +1,9 @@
-/**
- * You can run this snippet in an autorun event at the game start, 
- * to give the party all items. For debuggin purposes.
- */
+# Party Gain All Items
 
+You can run this snippet in an autorun event at the game start, 
+to give the party all items. For debuggin purposes.
+
+```js
 $dataItems.forEach(function(item) {
   if (item) $gameParty.gainItem(item, 99);
 });
@@ -12,3 +13,4 @@ $dataWeapons.forEach(function(item) {
 $dataArmors.forEach(function(item) {
   if (item) $gameParty.gainItem(item, 99);
 });
+```

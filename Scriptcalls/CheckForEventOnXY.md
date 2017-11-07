@@ -1,8 +1,9 @@
-/**
- * This snippet allows you to check if the player collides with a
- * certain event. These events will have a <checkForMe> notetag.
- */
+# Check For Event On XY
 
+This snippet allows you to check if the player collides with a
+certain event. These events will have a <checkForMe> notetag.
+
+```js
 (function() {
   var _GamePlayer_moveStraight = Game_Player.prototype.moveStraight;
   Game_Player.prototype.moveStraight = function(d) {
@@ -23,3 +24,4 @@
     }
   };
 })();
+```

@@ -1,7 +1,8 @@
-/**
- * This snippets adds an exit command to the title scene to close the game.
- */
+# Scene Title Exit Command
 
+This snippets adds an exit command to the title scene to close the game.
+
+```js
 (function() {
   var _Window_TitleCommand_makeCommandList =
     Window_TitleCommand.prototype.makeCommandList;
@@ -22,3 +23,4 @@
     this._commandWindow.setHandler("exitGame", this.commandExitGame.bind(this));
   };
 })();
+```
