@@ -1,7 +1,9 @@
 # This is a collection of Lunatic Codes for YEP Skill Core
 
 ## Custom Show Eval
+
 Show Skill only when the user has a certain weapon equipped.
+
 ```
 <Custom Show Eval>
 visible = user.weapons().contains($dataWeapons[ID]);
@@ -9,7 +11,9 @@ visible = user.weapons().contains($dataWeapons[ID]);
 ```
 
 ## Custom MP Cost
+
 MP Cost of the skill is dependant on the user's class.
+
 ```
 <Custom MP Cost>
 if (user.currentClass().name === "Mage") {
