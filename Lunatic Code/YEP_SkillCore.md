@@ -6,7 +6,8 @@ Show Skill only when the user has a certain weapon equipped.
 
 ```
 <Custom Show Eval>
-visible = user.weapons().contains($dataWeapons[ID]);
+var weaponId = 1;
+visible = user.weapons().contains($dataWeapons[weaponId]);
 </Custom Show Eval>
 ```
 
@@ -16,12 +17,10 @@ MP Cost of the skill is dependant on the user's class.
 
 ```
 <Custom MP Cost>
-if (user.currentClass().name === "Mage") {
+if (user.currentClass().id === 1) {
   cost = 16;
-} else if (user.currentClass().name === "Sage") {
+} else if (user.currentClass().id === 2) {
   cost = 42;
-} else if (user.currentClass().name === "Whatever") {
-  cost = 1337;
 } else {
   cost = 0;
 }
