@@ -10,8 +10,6 @@
 * `Plugin Snippets` contains snippets that could be used as a part of a plugin.
 * `Javascript` contains snippets with useful plain old JS.
 
-## Terms of Use
+## License
 
-All snippets may be used in commercial and non-commercial products. <br> <br>
-Feel free to share them. No credit needed. <br> If you wanna credit me, you can
-credit me as waynee95.
+[MIT](LICENSE)
