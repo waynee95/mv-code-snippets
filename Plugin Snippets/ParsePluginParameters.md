@@ -7,7 +7,7 @@ JSON.parse recursively. The parse function below will set every parameter that i
 var JSONSuperParse = function (string) {
     var temp;
     try {
-        temp = obj = JsonEx.parse(typeof string === 'object' ? JsonEx.stringify(string) : string);
+        temp = JsonEx.parse(typeof string === 'object' ? JsonEx.stringify(string) : string);
     } catch (e) {
         return string;
     }
